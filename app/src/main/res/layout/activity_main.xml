@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+
+    tools:context="com.example.prmtptr.studycase1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makan Malam"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dengan Milea"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="63dp" />
+
+    <EditText
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukan Menu"
+        android:layout_marginTop="40dp"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <EditText
+        android:id="@+id/jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukan Jumlah"
+        android:layout_marginTop="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/eatbus"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="eatbus"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="1"
+        android:onClick="Launcheatbus"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+    <Button
+        android:id="@+id/abnormal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="abnormal"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:onClick="launchabnormal"
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
